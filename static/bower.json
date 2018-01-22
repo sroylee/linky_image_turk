@@ -1,0 +1,23 @@
+{
+  "name": "mrtsense-dashboard",
+  "authors": [
+    "philipskokoh <philipskokoh@gmail.com>"
+  ],
+  "description": "mrtsense-dashboard",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "nvd3": "^1.8.6",
+    "MDBootstrap": "^4.4.1",
+    "components-font-awesome": "^4.7.0"
+  }
+}

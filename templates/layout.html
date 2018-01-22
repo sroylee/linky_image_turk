@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Linky, Analytics, SMU, Singapore Management University, Singapore">
+  <meta name="description" content="LinkyImageTurk">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <title>Linky Image Turk</title>
+
+  <link rel="stylesheet" href="/static/css/bootstrap.css">
+  <link rel="stylesheet" href="/static/css/font-awesome.css">
+  <link rel="stylesheet" href="/static/css/mdb.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body style="background-color: #fefefe">
+
+  <form style="width:100%" action = "/save" method="POST">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="/">
+          <strong>Linky Image Turk</strong>
+      </a>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <div class="navbar-nav">
+        <input class="btn btn-sm btn-info" name="action" type="submit" value="Save">
+      </div>
+    </nav>
+
+    <div class="main-wrapper">
+      {% block mainContainer %}{% endblock %}
+    </div>
+
+    <footer id="footer" class="page-footer center-on-small-only" style="padding-top:0">
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                Copyright © 2017 <a href="https://larc.smu.edu.sg">Living Analytics Research Centre</a>. All Rights Reserved.
+            </div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+  </form>
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script src="/static/js/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script src="/static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="/static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script src="/static/js/mdb.min.js"></script>  
+  
+  {% block customScript %}{% endblock %}
+
+  
+  
+</body>
+
+</html>
